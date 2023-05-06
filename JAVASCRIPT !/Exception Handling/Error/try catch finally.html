@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try error</title>
+</head>
+<body>
+    <script>
+        try{
+            console.log("start");
+            callfunction();
+            console.log("run complited");
+        }catch(varName){
+            console.log("error");
+            console.log("varName: "+ varName);//show  full error
+            console.log("varName.name: "+ varName.name);//show only error type name
+            console.log("varName.message: "+ varName.message);// show what is massage
+            console.log("varName.stack: "+ varName.stack);// full error show
+        }finally{
+            console.log("error ");//⁡⁢⁣⁢it must be run if error is available and not avaliable error⁡
+        }
+
+    </script>
+</body>
+</html>

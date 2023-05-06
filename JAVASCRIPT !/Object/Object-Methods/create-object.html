@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ! bina Object.create ke app add ya deleate kar sakte hai
+
+        let obj = {
+            name: 'aryan',
+            ip: '784239',
+            id: '749'
+        }
+        console.log(obj.name);
+        obj.data = [12,32,32]
+        delete obj.id
+        console.log(obj)
+        obj.class = 'bca';
+        console.log('height' in obj ); // answer is True on False
+
+
+        let obj2 = Object.create({ //Object.create lgane ke bad new proparty add ya delete nhi kya ja sakta hai
+            name: 'aryan',
+            ip: '784239',
+            id: '749'
+        })
+
+        obj2.data = [12,32,32]
+        delete obj2.ip
+        console.log(obj2)
+        //add
+       
+    </script>
+</body>
+</html>

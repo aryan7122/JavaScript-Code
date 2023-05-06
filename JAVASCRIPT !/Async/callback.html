@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+    <script>
+  
+        // add() function is called with arguments a, b
+        // and callback, callback will be executed just 
+        // after ending of add() function
+      
+        function add(a, b , callback){
+        document.write(`The sum of ${a} and ${b} is ${a+b}.` +"<br>");
+        callback();
+        }
+          
+        // disp() function is called just
+        // after the ending of add() function 
+        function disp(){
+        document.write('This must be printed after addition');
+        }
+
+        function hi(){
+            document.write("Hi....");
+        }
+          
+        // // Calling add() function
+        add("call",6,disp);
+        add(5,3,hi);     
+          // anonimaus function
+          add(1,1, function (){document.write("bye...");})
+     </script>
+</body>
+</html>

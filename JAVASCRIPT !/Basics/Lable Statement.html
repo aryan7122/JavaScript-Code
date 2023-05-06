@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lable Statement</title>
+</head>
+<body>
+   <script>
+      var sum = 0, a = 1;
+
+      // Label for outer loop
+      outerloop: while (true) {
+         a = 1;
+
+         // Label for inner loop
+         innerloop: while (a < 3) {
+            sum += a;
+            if (sum > 10) {
+
+               // Break outer loop from inner loop
+               break outerloop;
+            }
+            console.log("sum = " + sum);
+            a++;
+         }
+      }
+   </script>
+   <!-- ⁡⁣⁢⁢Example 2: Using the continue keyword with labeled loops. Users can jump to the outer loop from the inner loop using the
+   label.⁡⁡ -->
+   
+   <script>
+      var sum = 0, a = 1;
+
+      // Label for outerloop
+      outerloop: while (sum < 12) {
+         a = 1;
+
+         // Label for inner loop
+         innerloop: while (a < 3) {
+            sum += a;
+            if (a === 2 && sum < 12) {
+               // Jump to outer loop from inner loop
+               continue outerloop;
+            }
+            console.log("sum = " + sum + " a = " + a);
+            a++;
+         }
+      }
+   </script>
+</body>
+</html>

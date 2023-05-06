@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String: indexOf()</title>
+</head>
+<body>
+    <script>
+        // String: indexOf()
+        // Exercise
+// Write a function indexOfIgnoreCase taking two strings and determining the first occurrence of the second string in the first string. The function should be case insensitive.
+
+// Example: indexOfIgnoreCase('bit','it') and indexOfIgnoreCase('bit','IT') should return 1.
+
+function indexOfIgnoreCase(s1, s2) {
+  let s1Lower = s1.toLowerCase();
+  let s2Lower = s2.toLowerCase();
+  return s1Lower.indexOf(s2Lower);
+}
+let a = indexOfIgnoreCase('aryan','an');
+// let a = indexOfIgnoreCase('abcdefa','a');
+// let a = indexOfIgnoreCase('aryan','y');
+
+
+console.log(a);
+    </script>
+</body>
+</html>

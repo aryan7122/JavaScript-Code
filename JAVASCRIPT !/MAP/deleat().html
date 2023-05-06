@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Maps</h2>
+<p>Deleting Map elements:</p>
+
+<p id="demo"></p>
+
+<script>
+    // The delete() method removes a Map element:
+// Create a Map
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+
+// Delete an Element
+fruits.delete("apples");
+
+document.getElementById("demo").innerHTML = fruits.size;
+
+//get
+document.writeln(fruits.get("apples"));
+
+</script>
+
+</body>
+</html>
+

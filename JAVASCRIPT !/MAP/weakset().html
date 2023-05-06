@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>WeakSet</title>
+   </head>
+   <body>
+      <script>
+         // weeakSet()
+         // you can only store
+         // it can not be iterated
+         let ws = new WeakSet();  
+         console.log(ws);
+         // ws.add("name", "Aryan");// oly add object
+         let obj1 = {"name":"Aryan"};
+         ws.add(obj1);
+         // you can delead
+         ws.delete(obj1);
+         console.log(ws);
+         console.log(ws.has(obj1));
+         
+         
+   </script>
+</body>
+</html>

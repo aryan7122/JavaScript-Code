@@ -1,0 +1,36 @@
+<!-- 
+    the javascript function methods bind() methods is used to creat a new function.
+    syntax:
+    function.bind(thisarg[arg1,[arg2[,...]]])
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function methods binds</title>
+</head>
+<body>
+    <script>
+        var website ={
+            name : "ARYAN",
+            getName : function(){
+                return this.name;
+            }
+        }
+
+        var website2 ={
+            name:"Kushwaha",
+            getName : function(){
+                return this.name;
+            }
+        }
+        var undoundGetName = website.getName;
+        var boundGetName = undoundGetName.bind(website2);
+        document.writeln(boundGetName);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Specile Operator</title>
+ </head>
+ <body>
+     <script>
+// conditional operator       a==b ? x=true : x=false;         //
+
+         var x= true;
+        var y= false;
+// var a = prompt("enter x or y");
+        
+        var z = y ? true : false;
+        document.write(z);
+        
+        //      COMMA oPERATOR     let a = (1,2,3); a=3        //
+        
+        let b = (1,2,5);
+        
+        document.write("<br>",b); 
+
+
+//   delete operator       //
+
+        var person= {
+            fristname: "aryan",
+            lastname: "kushawaha",
+            age: 19,
+            gender: "male"
+        };
+        delete person.lastname;
+        document.write(" Delete lastname "+ person.lastname);
+        
+// in   prop in object //
+
+var q = 'age' in person ? true : false;
+        document.write("<br>"+"yas age in person  = "+ q);
+
+        // Instactof    object instanctof object_type //
+
+        // document.write("If person is a instance of protype p:"+(person instanceof string));
+
+// typeof   //
+var e = "strin";
+document.write("<br>" + " tpyeof ="+ (typeof e));
+     
+// new    var a= new a();   //
+
+class abc{
+
+}
+
+        var h = new abc();
+        
+   // void //
+
+    javascript: void func();
+        </script>
+        
+    </body>
+ </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parameters</title>
+</head>
+<body>
+    <script>
+// Q:9
+// Parameters
+// Now we get to know functions with parameters. With
+function give(input) {
+  return input;
+}
+// we define a function that simply returns the parameter input. Parameters are variables. With
+let resultTest = give('apple');
+// we call the function and pass it the argument 'apple'. The function will be executed. The argument 'apple' will be assigned to the parameter input. input gets the value 'apple'. The variable input is returned in the single code line of the function. This return is assigned to the variable resultTest. Finally, resultTest has the value 'apple'.
+// Exercise
+// Write a function echo that also returns the passed parameter. echo('Greta') should return 'Greta' and echo('CO2') should return 'CO2'
+
+        function echo(sound) {
+  return sound;
+}
+
+let result = echo('Greta');
+console.log(result);
+
+
+function echo2(sound2) {
+  return sound2;
+}
+
+let result2 = echo2('CO2');
+console.log(result2);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise</title>
+</head>
+<body>
+    <script>
+        
+        // let complete = true;
+        let complete = false;
+
+        let prom = new Promise ( function( resole,reject){
+            console.log("Fatchimg data, Please wait.");
+            if(complete){
+                resole("I am Successfull.");
+            }else{
+                reject("I am Failed");
+            }
+        });
+        let onfulfilment = (result) => {
+            console.log(result);
+        }
+        let onRejection = (error) => {
+            console.log(error);
+        }
+        prom.then(onfulfilment); // if conditation pe 
+        prom.catch(onRejection); // else conditation pe 
+    </script>
+    <!-- Pending promise -->
+    <!-- <script>
+        let promise = new Promise ( function(resole,reject){
+            console.log("Promise is pending for 3 second");
+            setTimeout( () => {
+                console.log("Promise is fulfiled..");
+                resole(true)
+                reject(new error ("is  error"))
+            },3000)
+        })
+        promise.then((value) => {
+                            console.log("Promise is fulfiled");
+        })
+        promise.catch((error) => {
+                            console.log("Promise is reject");
+        })
+
+    </script> -->
+</body>
+</html>

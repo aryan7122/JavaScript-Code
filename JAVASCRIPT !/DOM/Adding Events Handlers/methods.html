@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ID">color</p>
+    <input type="button" value="change" id="onclick">
+    <script>
+        document.getElementById("onclick").onclick = function id(){
+            document.getElementById("ID").style.color = "red";
+            alert("seccesfuly");
+        }
+    </script>
+</body>
+</html>

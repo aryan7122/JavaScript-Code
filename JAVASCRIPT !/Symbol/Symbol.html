@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smbol</title>
+</head>
+<body>
+    <script>
+        var id1 = Symbol("hello1");
+        var id2 = Symbol("hello1");
+        console.log(id1);
+        console.log(typeof id1); 
+        console.log(id1 === id2); 
+        // alert(id1); //error 
+        // alert(id1.toString());
+        // alert(id1.description);
+        console.log(id2.description)
+
+        // Object in Symbol 
+        let age = Symbol();
+            let user = {
+            name: "Aryan",
+            class:"bca",
+            [age]: 20  // object in symbol = [key]: value 
+        };
+        console.log(user);
+
+        // for in
+        for (const key in user) {
+            console.log(key);  // skip Symbole 
+        }
+
+        // JSON in Symbol skip 
+         console.log(JSON.stringify(user)); // skipp Stmble type value
+        </script>
+</body>
+</html>

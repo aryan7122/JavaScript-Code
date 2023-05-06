@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isArray</title>
+</head>
+<body>
+   <script>
+     var a = ["a"];
+     var a1 = Array.isArray(a);
+     document.write("a: " + a1 + "<br>");
+
+     var b = ("b");
+     var b1 = Array.isArray(b);
+     document.write("c: " + b1 + "<br>");
+
+     var c = "c";
+     var c1 = Array.isArray(c);
+     document.write("c: " + c1 + "<br>");
+
+     var d = (2);
+     var d1 = Array.isArray(d);
+     document.write("d: " + d1 + "<br>");
+
+     var e = new Array ("a");
+     var e1 = Array.isArray(e);
+     document.write("e: " + e1 + "<br>");
+
+     var f = new Array(3);
+     var f1 = Array.isArray(f);
+     document.write("f: " + f1 + "<br>");
+
+   </script>
+</body>
+</html>

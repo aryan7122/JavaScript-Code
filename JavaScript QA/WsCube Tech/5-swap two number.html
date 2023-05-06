@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swap two number </title>
+</head>
+<body>
+    <script>
+        // swap two Number Using two varibale & swap two Number Using three varibale
+        //  two mathod 
+        // swap two Number Using three varibale
+        // a= 5 , b=6 , temp; 
+        //a,  b=6, temp=5;
+        //a=6, b, temp=5;
+        //a=6, b=5 temp;
+
+        var a =5;
+        var b= 6;
+        var temp;
+        temp = b; //temp =6
+        b = a //b =5
+        a = temp; //a=6
+        alert("a: "+a+" "+"b:"+b);
+        // & swap two Number Using two varibale
+        // a=5 & b= 6
+        // a= a+b = 5+6 =11
+        // b = a-b = 11-6 = 5
+        // a = a-b = 11-5 = 6
+
+        var a =5;
+        var b =6;
+        a= a+b; //11
+        b = a-b; // 5
+        a = a-b; //6
+        alert(a+" "+b);
+    </script>
+</body>
+</html>

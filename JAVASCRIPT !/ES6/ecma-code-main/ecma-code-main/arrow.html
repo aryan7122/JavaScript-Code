@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Arrow function</h1>
+    <script>
+        // type of function written//
+        function a(){
+            return 1;
+        }
+        let b = function(){
+            return 2;
+        }
+        let c = t=()=>{ return 3};
+
+        let d = [1,2,3,4,5];
+        let e = d.map((f)=>f*2);
+        console.log(e);
+    
+    let item={
+        name:"anil",
+        getName:function()
+        {
+            console.warn("normal",this)
+        },
+        getNameArrow:()=>{
+            console.warn("arrow",this)
+        }
+    }
+
+
+    item.getName();
+    item.getNameArrow();
+
+        
+    </script>
+</body>
+
+</html>

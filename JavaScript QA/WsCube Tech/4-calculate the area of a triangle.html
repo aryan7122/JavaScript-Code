@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of Triangle</title>
+</head>
+
+<body>
+    <script>
+        // to find the area of right angle triangle
+        //|\
+        //| \
+        //|  \
+        //|   \
+        //|    \
+        //|     \
+        //|____\
+
+
+        //Formula: ⁡⁢⁢⁢(base * height)/2
+        var base = 4;
+        var height = 6;
+        var area = (base * height) / 2;
+        console.log(area);
+        alert(area);
+
+        //to find the area of regular triangle
+        //              ⁣/""""""""""""""""""""""""""""
+        //   ⁡⁣⁢⁣area⁡ =   ⁡⁢⁢⁢ / s(s-a) * (s-b) * (s-c)
+        //           \/
+        //⁡formula: s =(a+b+c)/2
+
+
+        var a = 10;
+        var b = 5;
+        var c = 10;
+        var s = (a + b + c) / 2;
+        var temp = s*(s-a)*(s-b)*(s-c);
+        var area = Math.sqrt(temp);
+        alert("area of regular triangle: "+area);
+
+    </script>
+</body>
+
+</html>

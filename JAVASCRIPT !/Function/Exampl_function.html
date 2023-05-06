@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+<!-- Exampl 1: -->
+    <Script>
+        function ShowMe(){
+            alert("Alert button is clicked");
+        }
+    </Script>
+   <input type="button" onclick="ShowMe()" value="alert">  <!--  agar mai onclick pe showMe nhi karunga to function nhi call hoga -->
+    <br>
+    <h1>Example 2;</h1>
+<!-- Example 2: SQURE  -->
+    <script>
+        function calculate(num){
+            alert(num*num);
+        }
+    </script>
+    <input type="button" onclick="calculate(2)" value="2*2..."><!--onclik in calculate function valu is 2 store in num-->
+    <br>
+    <h1>Example 3: return value</h1>
+<!-- Example 3: return value -->
+    <script>
+        function info(){
+            return "Hello this is Aryan";
+        }
+        document.write(info()+ "<br>");
+        function sums(nums){
+            return nums + 5;
+        }
+        document.write(sums(50) ); // sums function in 50 vale in var nums in store 
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- In JavaScript, almost "everything" is an object.
+
+    Booleans can be objects (if defined with the new keyword)
+    Numbers can be objects (if defined with the new keyword)
+    Strings can be objects (if defined with the new keyword)
+    Dates are always objects
+    Maths are always objects
+    Regular expressions are always objects
+    Arrays are always objects
+    Functions are always objects
+    Objects are always objects
+    All JavaScript values, except primitives, are objects. -->
+
+
+    <script>
+        // var objectName = {}; 
+        var a = {
+            fname: "Aryan", //or => 'f name'  //quate ke andar space do ge to valid hai par \ a.'f name' se run nhi hoga uske liye a['f name']; se hi ho sakta hai
+            lname : "Kushawaha",
+            age: 19,
+            email: "aryankushawaha21212gmail.com",
+            Move :['dhoom','shole','hum'],// it is array
+            //function or method
+            salary : function(){
+                return 30000;
+            },
+            // function in add fname and lname
+            fullName : function(){
+                return this.fname + " " + this.lname; //with use this nhi to error yha this. a ke liye use ho rha hai this ka owner a hai
+                
+            },
+            //objet in object
+
+            living : {
+                'city' : 'allhabad',
+                'country' : 'india'
+            }
+
+
+        }
+        
+          document.write(a);
+          console.log(a);
+          document.write(a.fname);
+          document.writeln(a.Move); //or => document.write(a['Move']);
+          document.write(a.salary());
+          document.write(a.fullName());
+          document.write(a.living.city + " " + a.living.country);
+
+
+    </script>
+</body>
+</html>

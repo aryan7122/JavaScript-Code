@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-chack positive negeative and 0 number</title>
+</head>
+<body>
+    <input type="number" name="number" id="num">
+    <button onclick="btn()">chack</button>
+    <h1 id="numis">::</h1>
+
+    <script>
+        function btn(){
+        var numberis = document.getElementById("num").value;
+        if(numberis >0){
+            var is = "This number is Positive";
+        }else if(numberis < 0){
+            var is = "This number is Negative";
+        }else{
+            var is = "This number is Zero";
+        }
+        document.getElementById("numis").innerHTML =is;
+        // math.sign
+        var ms = Math.sign(numberis);
+        // document.getElementById("numis").innerHTML = ms;
+    }
+    </script>
+</body>
+</html>

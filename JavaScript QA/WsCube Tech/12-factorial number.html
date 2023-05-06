@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial number</title>
+</head>
+<body>
+    <h1 id="h1"></h1><br>
+    <script>
+        // Factorial number:  N = 1*2*3*4*4*N
+ // 1.
+        var fn = prompt("Enter a number ");//10
+        var ans = 1;
+        
+        for(var i = 1; i<=fn; i++){
+            ans = ans*i;
+        }    
+        document.getElementById("h1").innerHTML = ans;
+        alert(ans); 
+
+
+        // factoria
+// 2.
+        // function factr(n){
+        //     if(n>fn){
+        //         return;
+        //     }
+        //     ans = ans*n;
+        //     n++;
+        //     factr(n);
+        // }factr(1);
+        // document.write(ans);
+    </script>
+</body>
+</html>

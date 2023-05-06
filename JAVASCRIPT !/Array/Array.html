@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array js</title>
+</head>
+<body>
+    <script>
+        // method 1 array creating 
+        var a = ["syam","aryan"];
+        var sum =0;
+        for(value of a){
+            document.writeln(value + "<br>");
+        }
+        var ary = [10,20,30,40,50,60,70,80,90,100];
+        document.write("<ul>")
+            for (let a = 0; a <=9; a++) {
+                document.write("<li>"+ ary[a] +"</li>");
+                sum = sum + ary[a];
+            }
+            document.write("total sum " + sum);
+</script>
+</body>
+</html>

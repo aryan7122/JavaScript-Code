@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        try{
+            console("start");
+            callfunction();
+            console.log("run complited")    ;
+        }catch(varName){
+            console.log("xxxxxxxxxxxxx");
+            if(varName instanceof EvalError){
+                console.log("It is EvalError");
+            }else if(varName instanceof RangeError){
+                console.log("It is RangeError");
+            }else if(varName instanceof ReferenceError){
+                console.log("It os ReferenceError");
+            }else if(varName instanceof SyntaxError){
+                console.log("It is synatxError");
+            }else if(varName instanceof TypeError){
+                console.log("It is TypeError");
+            }else if(varName instanceof URIError){
+                console.log("It is URIError");
+            }else{
+                console.log("It is AggregateError");
+            }
+            console.log(varName.name);
+        }
+    </script>
+</body>
+</html>

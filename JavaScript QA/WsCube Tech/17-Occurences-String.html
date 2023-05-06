@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Occurences of a Character in a String</title>
+</head>
+<body>
+    <script>
+        // chack a word in latter how many time one latter repeat
+        var string = prompt("Please enter a string");
+        var latter = prompt("Please enter a latter");
+        let strlen = string.length;
+        var counter = 0; 
+        for(var i =0; i <= strlen;  i++){
+            if(string[i] == latter){
+                counter++;
+            }
+        }
+        alert(`${latter} latter is ${counter} time repeat`)
+    </script>
+</body>
+</html>

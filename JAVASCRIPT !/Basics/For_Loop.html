@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript For Loop</title>
+</head>
+<body>
+    <script>
+
+    const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+    let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+} 
+
+document.write(text);
+
+//////////////////////////////////////
+//The For Loop
+
+// The for loop has the following syntax:
+
+// for (statement 1; statement 2; statement 3) {
+//   // code block to be executed
+// }
+// Statement 1 is executed (one time) before the execution of the code block.
+
+// Statement 2 defines the condition for executing the code block.
+
+// Statement 3 is executed (every time) after the code block has been executed.
+
+let for1 = "";
+for(let a = 0; a < 15; a++){
+    for1 = "The number is " + a + "<br>";
+}
+document.write(for1);
+
+///////////////////////////
+  
+    const car =["BMW", "Volvo", "Saab", "Ford"];
+    let b = 2;
+    let len = car.length;
+    let ca ="";
+    for(; b<len; b++){
+   ca = car[b] + "<br>";
+}
+document.write(ca);
+
+/////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

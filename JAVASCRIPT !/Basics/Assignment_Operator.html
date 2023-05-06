@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Operator</title>
+</head>
+<body>
+    <pre>
+        JavaScript Assignment Operators
+Assignment operators are used to assign values to JavaScript variables.
+
+Given that x = 10 and y = 5, the table below explains the assignment operators:
+
+Operator  	 Example	   Same As 	   Result in x	
+=	            x = y  	    x = y	     x = 5	
++=          	x += y  	x = x + y	 x = 15	
+-=          	x -= y  	x = x - y	 x = 5	
+*=          	x *= y  	x = x * y	 x = 50	
+/=          	x /= y  	x = x / y	 x = 2	
+%=          	x %= y  	x = x % y	 x = 0
+    </pre>
+
+    <script>
+        var x = 2;
+        var y = 1;
+var a = x *= y;
+var b = x += y;
+        // document.write("x= "+ (x)," y= "+ (y),"<br>");
+
+        document.write("x=y ="+" ",a,"<br>");
+        document.write("x+=y ="+" ",b,"<br>");
+        document.write("x-=y ="+" "+(x-=y),"<br>");
+        document.write("x*=y ="+" "+(x*=y),"<br>");
+        document.write("x/=y ="+" "+(x/=y),"<br>");
+        document.write("x%=y ="+" "+(x%=y),"<br>");
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitwise Operators</title>
+</head>
+<body>
+    <pre>
+        JavaScript Bitwise Operators
+Bit operators work on 32 bits numbers. 
+Any numeric operand in the operation is converted into a 32 bit number. 
+The result is converted back to a JavaScript number.
+
+Operator	Description	Example	Same as	Result	Decimal
+&	AND	x = 5 & 1	0101 & 0001	0001	 1
+|	OR	x = 5 | 1	0101 | 0001	0101	 5
+~	NOT	x = ~ 5	 ~0101	1010	 10
+^	XOR	x = 5 ^ 1	0101 ^ 0001	0100	 4
+<<	Left shift	x = 5 << 1	0101 << 1	1010	 10
+>>	Right shift	x = 5 >> 1	0101 >> 1	0010	  2
+The examples above uses 4 bits unsigned examples. But JavaSc
+
+&&&&&&&&&&&&&&&&& and &&&&&&&&&&&&&&&&&&&&&
+
+ 0 & 0 = 0
+ 0 & 1 = 0
+ 1 & 0 = 0
+ 1 & 1 = 1
+
+|||||||||||||||||||||| or ||||||||||||||||||||||| 
+
+ 0 | 0 = 0
+ 0 | 1 = 1
+ 1 | 0 = 1
+ 1 | 1 = 1
+
+~~~~~~~~~~~~~~~~~~~~~~~~ not ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+ ~ 0 =1
+ ~ 1 =0
+
+^^^^^^^^^^^^^^^^^^^^^^^^^ xor ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+0 ^ 0 = 0
+0 ^ 1 = 1
+1 ^ 0 = 1
+1 ^ 1 = 0
+----------------------------------------------------
+    </pre>
+
+    <script>
+
+        var x =prompt("enter x + a number fotr chake bitwise operator");
+        var y =prompt("enter y + a number fotr chake bitwise operator");
+        
+        let z =prompt("choose bitwise one operator : & | ^ ~ ");
+        
+        document.write("bitwise X Z y :"+ " " + (xzy));
+      
+
+
+    </script>
+</body>
+</html>

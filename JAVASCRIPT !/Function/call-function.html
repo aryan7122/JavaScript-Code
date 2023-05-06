@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Methods</title>
+</head>
+<body>
+    <!-- call() -->
+      <script>
+        function Emp(id,name){
+            this.id =id,
+            this.name =name;
+        }
+
+        function PermanentEmp(id,name){
+            Emp.call(this,id,name);
+        }
+        // document.writeln(new PermanentEmp(1, "aryan").id);
+        // document.writeln(new PermanentEmp(1, "aryan").name);
+
+        function TemporaryEmp(id,name){
+            Emp.call(this,id,name);
+        }
+
+            var pEmp = new PermanentEmp(1,"aryan");
+            var tEmp = new TemporaryEmp(2, "shani");
+
+            document.writeln("PermanentEmp = " + pEmp.id + " " + pEmp.name + "<br>");
+            document.writeln("TemporaryEmp = " + tEmp.id + " " + tEmp.name);
+
+
+
+            
+            document.write("<br>=======================<br>")
+            let userDetails = {
+                name: "Aryan Kushawaha",
+                age: 20,
+                designation: "Softer Engineer",
+            }
+                       let   printDetails=  function (state,c) { // call after no nead
+                                   document.write(this);
+                                   console.log(this.name+" "+state+ " "+ c);
+                               }
+                               
+                               document.write("<br>=======================<br>")
+                               let userDetails2 = {
+                                   name: "Ram Kushawaha",
+                                   age: 23,
+                                   designation: "Softer Engineer",
+                                   
+                                }
+                // printDetails.call(userDetails,"agra"); //call use no nead again call
+                // printDetails.call(userDetails2,"delhi","india");  
+                // printDetails.apply(userDetails,["agra","uk"]); //  value pass in array 
+                // printDetails.apply(userDetails2,["delhi","uk"]); // 
+               let newfun = printDetails.bind(userDetails,["delhi","uk"]);  //bind
+                console.log("bind"+newfun())
+
+                //call me ham darect call karte hai apply me ham argument array me pas karte hai bind me ham use variable me store karte hai
+                
+    </script> 
+
+
+</body>
+</html>
+
+
+
+  

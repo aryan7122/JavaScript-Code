@@ -1,0 +1,39 @@
+<!-- 
+    function methods type
+    1. call()
+    2. apply()
+    3. bind()
+    4. toString()
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> function methods call</title>
+</head>
+<body>
+    <script>
+        function Emp(id,name){
+            this.id = id;
+            this.name = name;
+        }
+
+        function PermanentEmp(id,name){
+            Emp.call(this,id,name)
+        }
+
+        function TemporaryEmp(id,name){
+            Emp.call(this,id,name)
+        }
+
+        var pEmp = new PermanentEmp(101,"aryan kushwaha");
+        var tEmp = new TemporaryEmp(201, "vivek patel");
+
+        document.writeln(pEmp.id + " " + pEmp.name + "<br>");
+        document.writeln(tEmp.id + " " + tEmp.name);
+
+    </script>
+</body>
+</html>

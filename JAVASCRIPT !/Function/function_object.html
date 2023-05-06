@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Object</title>
+</head>
+<body>
+    <!-- Example 1:Syntax -->
+    <script>
+        var add = new Function("num1","num2","return num1 + num2");
+        document.writeln(add(2,8)); //10
+        document.writeln(add(3,17));//20
+    </script>
+
+    <!-- Example 2: pow --><br>
+    <script>
+        var power = new Function("num3","num4","return Math.pow(num3,num4)")
+        document.writeln(power(9,2))
+    </script>
+</body>
+</html>

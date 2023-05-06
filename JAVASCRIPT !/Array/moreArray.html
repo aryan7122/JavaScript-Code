@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ary = [
+        //    0      1    2     3    <-- index inner
+            ["Aryan",19,"Male","BCA"],    // 0
+            ["shani",20,"male","BCA"],    // 1    <- outer index
+            ["anurag",23,"Male","MCA"]    // 2
+        ];
+        for (let a = 0; a < 3; a++){   //outer index
+            for(var b = 0; b<3;b++){    // inner index
+                document.write(ary[a][b]+ " ");
+            } 
+            document.write("<br>");
+        }
+
+    </script>
+</body>
+</html>

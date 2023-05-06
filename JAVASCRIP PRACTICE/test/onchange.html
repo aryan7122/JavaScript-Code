@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="out">output:</p>
+    <!-- <button id="btn" onchange="onch()">1</button>
+    <button id="btn" onchange="onch()">2</button>
+    <button id="btn" onchange="onch()">3</button>
+    <button id="btn" onchange="onch()">4</button> -->
+    <input type="text" id="btn" onchange="onch()">
+    <script>
+        function onch(){
+            var b = document.getElementById('btn').value;
+                    document.getElementById('out').innerHTML = b;
+        }
+    </script>
+    <!--  -->
+        <p id="aa"></p>
+    <input type="text" id="inp" onchange="onc()">
+<script>
+    function onc(){
+        var a = document.getElementById('inp').value;
+        document.getElementById('aa').innerHTML = a;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong number</title>
+</head>
+<body>
+
+    <!--  Armstrong number: abc = a*a*a  + b*b*b + c*c*c -->
+    <script>
+    var number = prompt("Please enter a number");//abc
+    var temp = number; //123
+    var sum = 0;
+    // while(temp>0){
+        console.log("your number "+temp);
+        var digit = temp%10 ;//3
+        console.log("last number "+digit);
+        var c= (digit**3);//9
+        console.log("last number squre "+c);
+        var free = parseInt( number/10);
+        console.log(free);
+        var b = parseInt(free%10);//2
+        console.log("second number "+b);
+      var bb=  b**3
+      console.log("second number squre "+bb);
+        var a = parseInt(free/10);//1
+        console.log("second number "+a);
+      var aa=  a**3
+      console.log("second number squre "+aa);
+        var all= c+bb+aa;
+        console.log(" Armstrong number  "+all);
+        alert("Armstrong number: "+ all)
+
+        
+        // }
+    </script>
+
+</body>
+</html>

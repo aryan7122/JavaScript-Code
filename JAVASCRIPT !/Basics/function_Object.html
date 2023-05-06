@@ -1,0 +1,27 @@
+<!-- in javascript, the purpose od function constructor is to create a new function object.it execute the code globall. However, if we call the construcor directly, a function is created dynamically but in an unsecured way. -->
+<!-- syntax: 
+nwe Function([ard1[,arg2[,....argN]],]funcBody) -->
+<!-- 
+    function methods type
+    1. call()
+    2. apply()
+    3. bind()
+    4. toString()
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Object</title>
+</head>
+<body>
+   
+    <script>
+        var add = new Function("num1", "num2", "return Math.pow(num1,num2)");
+        document.write(add(3,2));
+        document.write(add(2,3));
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- Example 1: apply() -->
+
+    <script>
+        // maxmim number and Minimum number
+        var arr = [6,7,4,3,8];
+        var max = Math.max.apply(this,arr);
+        var min = Math.min.apply(this,arr);
+
+
+        document.writeln(max);
+        document.write(min);
+
+    </script>
+<br>
+    <!-- Example 2: apply() -->
+    <script>
+        // array1 push in arry2
+        var arr1 = [1,2,3,4];
+        var arr2 = [5,6,7,8];
+
+        arr1.push.apply(arr1,arry2);
+        // arr1 += arr2;
+        for(totle of arr1){
+            document.write(totle);
+        }
+    </script>
+    <!-- example 3: -->
+    <script>
+        const person = {
+          fullName: function() {
+            return this.firstName + " " + this.lastName;
+          }
+        }
+        
+        const person1 = {
+          firstName:"John",
+          lastName: "Doe"
+        }
+        
+        document.write( person.fullName.apply(person1)); 
+        </script>
+</body>
+</html>

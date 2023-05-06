@@ -1,0 +1,41 @@
+ <html>
+
+<head>
+    <title>Ecma script Tutorial</title>
+</head>
+
+<body>
+    <h1>Rest Operator</h1>
+    <!-- <script>
+       function fruits(a,...z)
+       {
+           console.warn("fruits",z)
+       }
+       function test()
+       {
+
+       }
+       fruits('apple','banana','kiwi','orange','papaya',test);
+    </script> -->
+
+    <script>
+        // function sum() {
+        function sum(name,clases,...args) {
+            console.log(arguments);
+            document.writeln("hello "+name +"Class "+ clases);
+            let sum = 0;
+            // for(let i in arguments){
+            for(let  i in args){
+                // sum += arguments[i];
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+        // sum(20,30,40);
+        // sum(20,30);
+        sum(" ram ","BCA", 20, 30);
+        // sum(30,40," aryan "," age ")
+    </script>
+</body>
+
+</html>

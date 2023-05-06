@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritence</title>
+</head>
+<body>
+    <script>
+        class employee{
+            constructor(name, age, salary){
+                this.empname = name;
+                this.empage = age;
+                this.empsalary = salary;
+                console.log("constructor employee: "+ name);
+            }
+
+            info(){
+                console.log("employee Name: "+ this.empname);
+                console.log(`<p>infoall</p>
+                Name:${this.empname}
+                Name:${this.empage}
+                Name:${this.empsalary}`)
+            }
+
+        }//     |'''''''''''''''|
+        class manager extends employee{  
+            // ya call hone pe baki call nhi hoga name ki valu only esme work karega agar ese comment kar de to bakike liye name ki value kam karegi
+            // constructor(name){
+            //     super();    //it is use inheritence
+            //     console.log("info manager: "+ name);
+            // }
+            info(){
+                super.info();
+                console.log("info manager: "+ this.empname);
+            }
+        }
+
+        class all extends manager{
+
+        }
+        let a = new all("Aryan Kushwaha",19,390000);
+        a.info();
+    </script>
+</body>
+</html>

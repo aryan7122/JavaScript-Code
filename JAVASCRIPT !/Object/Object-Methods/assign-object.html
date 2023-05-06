@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var object1 = {
+            a:1,
+            b:2,
+            c:3
+        }
+        var object2 = {
+            d:1,
+            e:2,
+            f:3
+        }
+        var object3 = Object.assign({a:9,g:8,h:3},object1);
+        var object4 = Object.assign({f:9,i:8,j:3},object1);
+        console.log(object1,object3);
+        console.log(object4);
+    </script>
+</body>
+</html>

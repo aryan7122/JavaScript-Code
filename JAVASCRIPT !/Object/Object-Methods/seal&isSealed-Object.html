@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const object1 ={
+            name:'aryan'
+        }
+
+        const object2 = Object.seal(object1); //object 2 pe seal hone ki vajh se nai proparty add nhi hogi purani proparty deleat nhi hogi ony hum purane value ko update kar sakte hai.
+        object2.name = "shani"
+        console.log(object2);
+        delete object2.name;
+        console.log(Object.isSealed(object2));//issealed btata hai ki seal method lga huva hai ya nhi lga rhega to true byayega 
+        console.log(Object.isSealed(object1));
+
+    </script>
+</body>
+</html>

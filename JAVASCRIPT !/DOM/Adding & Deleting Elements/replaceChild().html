@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<ul id="myList">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+
+
+<button onclick="myFunction()">"Replace"</button>
+
+
+<script>
+function myFunction() {
+// Select first child element:
+const element = document.getElementById("myList").children[0];
+
+// Create a new text node:
+const newNode = document.createTextNode("Water");
+
+// Replace the text node:
+element.replaceChild(newNode, element.childNodes[0]);
+}
+</script>
+
+</body>
+</html>

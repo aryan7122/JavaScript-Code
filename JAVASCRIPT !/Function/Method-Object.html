@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function employee(id,name,salary){
+            this.id = id;
+            this.name = name;
+            this.salary = salary;
+            this.updateSalary = updateSalary;
+           
+            function updateSalary(newsalary){
+                this.salary = newsalary; //hare this.salry is old salary = newsalary is update
+             }
+
+        }
+        var emp = new employee(212,"aryan","20m");//here emp is object
+
+        document.writeln(emp.name + " " + emp.salary);
+
+        emp.updateSalary("30m");
+
+        document.writeln(emp.name + " " + emp.salary);
+
+        // for(value in emp){
+        //     document.writeln(emp[value]);
+        // }
+    </script>
+</body>
+</html>
